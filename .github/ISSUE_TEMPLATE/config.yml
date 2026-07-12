@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private security report
+    url: https://github.com/sumitake/Remote-SSH-Tunnel/security/advisories/new
+    about: Report vulnerabilities privately.
+  - name: VS Code Remote Tunnels documentation
+    url: https://code.visualstudio.com/docs/remote/tunnels#_using-the-code-cli
+    about: Get support for the standalone CLI and Microsoft tunnel service.

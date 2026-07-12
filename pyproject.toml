@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools==83.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remote-ssh-tunnel-rpc"
+version = "0.1.0"
+description = "A bounded MessagePack RPC client for an existing VS Code Remote tunnel"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "John Osumi" }]
+dependencies = ["msgpack==1.2.1"]
+
+[project.scripts]
+remote-ssh-tunnel-rpc = "remote_ssh_tunnel.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.1.1",
+  "ruff==0.15.21",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-config --strict-markers"
+testpaths = ["tests/python"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "S", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
