@@ -19,6 +19,7 @@ ACTION_PIN = re.compile(r"^\s*-?\s*uses:\s*([^\s#]+)")
 FULL_SHA = re.compile(r"^[0-9a-f]{40}$")
 SOURCE_REVISION = "1803940623da0ba648084b5ba0b1265b2b854ae4"
 CC_LICENSE_SHA256 = "fd3a263fe19ed8faa9068b43abaebafc02c77897b0c6fc09abc04bb592e5f16e"
+DEPRECATED_REPOSITORY_NAME = "Remote-SSH" + "-Tunnel"
 
 
 def repository_files() -> list[Path]:
@@ -125,6 +126,8 @@ def check_repository_sanitation(errors: list[str]) -> None:
             continue
         if token_pattern.search(text):
             errors.append(f"token-shaped value found: {relative}")
+        if DEPRECATED_REPOSITORY_NAME in text:
+            errors.append(f"deprecated repository name found: {relative}")
         if private_path.search(text):
             errors.append(f"private absolute path found: {relative}")
         if ("you" + "tube") in text.lower():

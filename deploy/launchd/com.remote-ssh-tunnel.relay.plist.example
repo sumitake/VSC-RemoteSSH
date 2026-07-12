@@ -8,7 +8,7 @@
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/bin/node</string>
-    <string>/Users/CHANGE_ME/Remote-SSH-Tunnel/bin/remote-ssh-tunnel-relay.js</string>
+    <string>/Users/CHANGE_ME/VSC-RemoteSSH/bin/remote-ssh-tunnel-relay.js</string>
   </array>
 
   <key>EnvironmentVariables</key>

@@ -6,6 +6,10 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Changed
+
+- Updated repository branding, links, clone instructions, and service checkout paths for VSC-RemoteSSH.
+
 ## [0.1.0] - 2026-07-11
 
 ### Added
@@ -16,5 +20,5 @@ All notable changes to this project are documented here. The format follows
 - Isolated CC-BY-4.0 interface fixtures and third-party attribution.
 - Matrix CI, CodeQL, Gitleaks, Dependabot, repository validation, and public contribution files.
 
-[Unreleased]: https://github.com/sumitake/Remote-SSH-Tunnel/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/sumitake/Remote-SSH-Tunnel/releases/tag/v0.1.0
+[Unreleased]: https://github.com/sumitake/VSC-RemoteSSH/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/sumitake/VSC-RemoteSSH/releases/tag/v0.1.0

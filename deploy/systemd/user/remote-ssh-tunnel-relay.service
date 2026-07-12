@@ -1,6 +1,6 @@
 [Unit]
 Description=Loopback-only VS Code remote tunnel relay
-Documentation=https://github.com/sumitake/Remote-SSH-Tunnel
+Documentation=https://github.com/sumitake/VSC-RemoteSSH
 Wants=network-online.target
 After=network-online.target
 StartLimitIntervalSec=300
@@ -8,10 +8,10 @@ StartLimitBurst=5
 
 [Service]
 Type=simple
-WorkingDirectory=%h/Remote-SSH-Tunnel
+WorkingDirectory=%h/VSC-RemoteSSH
 Environment=PATH=/usr/local/bin:/usr/bin:/bin
 EnvironmentFile=%h/.config/remote-ssh-tunnel/relay.env
-ExecStart=/usr/bin/env node %h/Remote-SSH-Tunnel/bin/remote-ssh-tunnel-relay.js
+ExecStart=/usr/bin/env node %h/VSC-RemoteSSH/bin/remote-ssh-tunnel-relay.js
 Restart=on-failure
 RestartSec=15s
 TimeoutStopSec=30s
