@@ -1,0 +1,91 @@
+{
+  "asset_license": "CC-BY-4.0",
+  "encoding": "concatenated MessagePack objects",
+  "protocol_version": 5,
+  "messages": [
+    {
+      "direction": "server_to_client",
+      "purpose": "hello",
+      "message": {
+        "id": null,
+        "method": "version",
+        "params": {
+          "version": "<advertised-server-version>",
+          "protocol_version": 5
+        }
+      }
+    },
+    {
+      "direction": "client_to_server",
+      "purpose": "version_handshake",
+      "message": {
+        "id": null,
+        "method": "version",
+        "params": {
+          "version": "<advertised-server-version>",
+          "protocol_version": 5
+        }
+      }
+    },
+    {
+      "direction": "client_to_server",
+      "purpose": "direct_process_spawn",
+      "message": {
+        "id": "<positive-random-request-id>",
+        "method": "spawn",
+        "params": {
+          "command": "/path/to/executable",
+          "args": ["arg-one", "arg two"],
+          "cwd": null,
+          "env": {}
+        }
+      }
+    },
+    {
+      "direction": "server_to_client",
+      "purpose": "stream_advertisement",
+      "message": {
+        "id": null,
+        "method": "streams_started",
+        "params": {
+          "for_request_id": "<same-request-id>",
+          "stream_ids": ["<stdin-id>", "<stdout-id>", "<stderr-id>"]
+        }
+      }
+    },
+    {
+      "direction": "client_to_server",
+      "purpose": "close_stdin",
+      "message": {
+        "id": null,
+        "method": "stream_ended",
+        "params": {
+          "stream": "<stdin-id>"
+        }
+      }
+    },
+    {
+      "direction": "server_to_client",
+      "purpose": "output_chunk",
+      "message": {
+        "id": null,
+        "method": "stream_data",
+        "params": {
+          "stream": "<stdout-or-stderr-id>",
+          "segment": "<MessagePack-binary>"
+        }
+      }
+    },
+    {
+      "direction": "server_to_client",
+      "purpose": "command_result",
+      "message": {
+        "id": "<same-request-id>",
+        "result": {
+          "exit_code": "<integer-0-through-255>",
+          "message": "<remote-status-text>"
+        }
+      }
+    }
+  ]
+}

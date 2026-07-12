@@ -1,0 +1,11 @@
+{
+  "asset_name": "Generalized VS Code Remote interface fixtures",
+  "creator": "Microsoft Corporation and contributors",
+  "source_repository": "https://github.com/microsoft/vscode-remote-release",
+  "source_revision": "1803940623da0ba648084b5ba0b1265b2b854ae4",
+  "source_license_file": "LICENSE-repository",
+  "license": "CC-BY-4.0",
+  "retrieved": "2026-07-11",
+  "modified": true,
+  "modification_notice": "Deployment-specific values were replaced with placeholders; interface observations were reorganized into implementation-neutral fixtures; product code, binaries, artwork, and operational logs were omitted."
+}

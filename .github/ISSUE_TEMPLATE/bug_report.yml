@@ -1,0 +1,42 @@
+name: Bug report
+description: Report a reproducible defect using sanitized information only.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include tokens, tunnel IDs, cluster IDs, account names, hostnames, or private paths.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Commit or version
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system plus Node.js and Python versions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Use placeholders for all deployment-specific values.
+    validations:
+      required: true
+  - type: checkboxes
+    id: sanitation
+    attributes:
+      label: Sanitization
+      options:
+        - label: I removed credentials and deployment-specific identifiers from this report.
+          required: true
