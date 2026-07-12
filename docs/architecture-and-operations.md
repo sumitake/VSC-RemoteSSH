@@ -1,6 +1,6 @@
 # Architecture and Operations
 
-This page is the detailed production reference for Remote-SSH-Tunnel. The root
+This page is the detailed production reference for VSC-RemoteSSH. The root
 README remains the deployment quick start.
 
 ## Responsibility boundaries

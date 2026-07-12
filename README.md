@@ -1,8 +1,8 @@
-# Remote-SSH-Tunnel
+# VSC-RemoteSSH
 
-[![CI](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/ci.yml/badge.svg)](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/codeql.yml/badge.svg)](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/codeql.yml)
-[![Secret Scan](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/secret-scan.yml/badge.svg)](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/secret-scan.yml)
+[![CI](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/ci.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/codeql.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/codeql.yml)
+[![Secret Scan](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/secret-scan.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/secret-scan.yml)
 
 A headless, self-recovering client bridge for an existing Visual Studio Code
 Remote Tunnel. It combines a loopback-only Microsoft dev-tunnels relay with a
@@ -186,8 +186,8 @@ host's service remains active after a reboot before deploying the client relay.
 ## 2. Install the client tools
 
 ```bash
-git clone https://github.com/sumitake/Remote-SSH-Tunnel.git
-cd Remote-SSH-Tunnel
+git clone https://github.com/sumitake/VSC-RemoteSSH.git
+cd VSC-RemoteSSH
 
 npm ci
 python3 -m venv .venv
@@ -279,7 +279,7 @@ attached to a terminal.
 ## 5. Run the client relay as a service
 
 The [systemd user template](deploy/systemd/user/remote-ssh-tunnel-relay.service)
-assumes this repository is at `~/Remote-SSH-Tunnel` and configuration is at
+assumes this repository is at `~/VSC-RemoteSSH` and configuration is at
 `~/.config/remote-ssh-tunnel/relay.env`:
 
 ```bash
