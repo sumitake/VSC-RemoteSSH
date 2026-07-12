@@ -1,4 +1,4 @@
-# Remote-SSH-Tunnel
+# VSC-RemoteSSH
 
 [![CI](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/ci.yml/badge.svg)](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/codeql.yml/badge.svg)](https://github.com/sumitake/Remote-SSH-Tunnel/actions/workflows/codeql.yml)
