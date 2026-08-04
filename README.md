@@ -3,6 +3,7 @@
 [![CI](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/ci.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/codeql.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/codeql.yml)
 [![Secret Scan](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/secret-scan.yml/badge.svg)](https://github.com/sumitake/VSC-RemoteSSH/actions/workflows/secret-scan.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 A headless, self-recovering client bridge for an existing Visual Studio Code
 Remote Tunnel. It combines a loopback-only Microsoft dev-tunnels relay with a
