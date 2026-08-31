@@ -230,7 +230,7 @@ A production monitor should distinguish:
 - Node.js: 20 and newer, continuously tested on 20, 22, and 24.
 - Python: 3.11 and newer, continuously tested on 3.11 through 3.14.
 - Microsoft dev-tunnels SDK: pinned to 1.3.50.
-- MessagePack Python: pinned to 1.2.1.
+- MessagePack Python: pinned to 1.2.2.
 - RPC protocol: observed version 5 only.
 
 The VS Code Remote RPC interface is private and can change without semantic
