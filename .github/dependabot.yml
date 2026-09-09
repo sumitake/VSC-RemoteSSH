@@ -7,6 +7,10 @@ updates:
       day: monday
     open-pull-requests-limit: 5
     labels: ["dependencies", "github-actions"]
+    groups:
+      github-actions:
+        patterns:
+          - "*"
 
   - package-ecosystem: npm
     directory: /

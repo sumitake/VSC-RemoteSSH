@@ -20,7 +20,7 @@ license: <https://github.com/microsoft/vscode-languageserver-node>
 
 ## MessagePack for Python
 
-The Python runtime depends on `msgpack` version `1.2.1`, distributed under the
+The Python runtime depends on `msgpack` version `1.2.2`, distributed under the
 Apache License 2.0. Source and license:
 <https://github.com/msgpack/msgpack-python>
 

@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [{ name = "John Osumi" }]
-dependencies = ["msgpack==1.2.1"]
+dependencies = ["msgpack==1.2.2"]
 
 [project.scripts]
 remote-ssh-tunnel-rpc = "remote_ssh_tunnel.cli:main"

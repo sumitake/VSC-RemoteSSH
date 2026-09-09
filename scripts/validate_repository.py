@@ -151,8 +151,10 @@ def check_runtime_contract(errors: list[str]) -> None:
         errors.append("relay executable is not marked executable")
 
     requirement = (ROOT / "requirements.txt").read_text().strip()
-    if requirement != "msgpack==1.2.1":
-        errors.append("requirements.txt must pin the audited msgpack runtime")
+    pyproject = (ROOT / "pyproject.toml").read_text()
+    pinned = re.search(r'"((?:msgpack==)[0-9][0-9.]*)"', pyproject)
+    if pinned is None or requirement != pinned.group(1):
+        errors.append("requirements.txt must pin the same msgpack version as pyproject.toml")
 
 
 def check_plist(errors: list[str]) -> None:
