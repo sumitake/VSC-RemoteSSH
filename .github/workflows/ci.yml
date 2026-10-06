@@ -36,7 +36,7 @@ jobs:
       - name: Lint Markdown
         run: npm run lint:markdown
       - name: Audit runtime dependencies
-        run: npm audit --audit-level=moderate
+        run: npm audit --omit=dev --audit-level=moderate
       - name: Inspect package contents
         run: npm pack --dry-run
 
