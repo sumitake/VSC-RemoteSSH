@@ -29,6 +29,6 @@
     "markdown-it": "15.0.3"
   },
   "devDependencies": {
-    "markdownlint-cli2": "0.23.3"
+    "markdownlint-cli2": "0.24.0"
   }
 }
